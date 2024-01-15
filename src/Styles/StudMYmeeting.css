@@ -1,0 +1,31 @@
+.img1{
+    height: 120px;
+    width: 120px;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.current button{
+    width: 150px;
+    margin: 10px;
+    padding: 5px;
+    color: #fff;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.info1{
+    margin-top: 30px;
+}
+.current{
+    display: flex;
+}
+
+.cart{
+    height: 100px;
+    width: 100px;
+}

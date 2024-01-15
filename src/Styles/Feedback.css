@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Feedback-Container{
+    width: 100%;
+    height: 100%; 
+}
+.Feedback-Container .Feedback-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #c6d0d8;
+    gap: 30px;
+    row-gap: 30px;
+    padding: 20px;
+    grid-template-rows: 20vw 20vw;
+}
+.Feedback-Container .Feedback-Title {
+    color:white;
+    background-color: rgb(0, 211, 172);
+    padding: 10px;
+}
+
+.Feedback-Container .Feedback-grid .Feedback-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Feedback-Container .Feedback-grid .Feedback-item i{
+    color: red;
+    height: 30px;
+    width: 30px;
+}
+.Feedback-Container .Feedback-grid .Feedback-item .Feedback-View{
+    margin-top: 5px;
+    line-height: 1.7rem;
+    font-size: 1rem;
+}
+.Feedback-Container .Feedback-grid .Feedback-item .Feedback-rating i{
+    color: gold;
+    margin-right: 5px;
+}

@@ -1,0 +1,18 @@
+.reg{
+    color: white;
+}
+#reg-submit,#reg-cancel{
+    color: #ffffff;
+    border: 2px solid blue;
+}
+.mb-3{
+    text-align: left;
+}
+
+.reg{
+    background: url("https://static.vecteezy.com/system/resources/previews/001/589/630/original/green-background-with-fading-square-and-dots-free-vector.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}

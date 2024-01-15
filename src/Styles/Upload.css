@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bigbox{
+
+    border: 2px dashed rgb(6, 6, 6);
+    height: 370px;
+    width:800px;
+    background-color: rgba(210, 210, 210, 0.123);
+    position: absolute;
+    left:20%;
+    top: 25%;
+
+}
+.uwork  h1{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left:37%;
+    top:15%;
+}
+
+.uwork p{
+    position:absolute;
+    top: 45%;
+    left:38%;
+    color: rgb(55, 44, 44);
+}
+.uwork a{
+        position:absolute;
+        top: 85%;
+        left:85%;
+        color: rgb(55, 44, 44);
+        text-decoration: none;
+        border: 2px solid gray;
+        padding: 5px 25px ;
+        font-weight: lighter;
+        background-color: rgb(163, 190, 241);
+
+}
+.uwork a:hover{
+    color: white;
+    background-color: rgb(80, 80, 232);
+} 
+
+.inputts{
+    margin-left: 15px;
+    margin-top:20px;
+}
+
+.sub{
+    margin-top:30px;
+    margin-left: 100px;
+    padding: 2px 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+label{
+    margin-left:30px;
+}

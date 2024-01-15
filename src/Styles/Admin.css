@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+.Admin_container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(104, 240, 226);
+    background-image: url(https://wallpaperaccess.com/full/1802075.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.Admin_container p{
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1rem;
+}
+
+.Admin_container .main_left{
+    margin-left: 2vw;
+    flex-basis: 50%;
+    color: white;
+    font-size: 1.6rem;
+}
+.Admin_container .main_left img{
+    width: 45vw;
+    height: 65vh;
+    border-top-left-radius: 3%;
+}
+.Admin_container .main_right{
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 4%;
+}
+.Admin_container .main_right .profile-box {
+    margin-left: 10vw;
+    width: 40vw;
+    height: 70vh;
+    /* height: 500px; */
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 5%;
+    background: #fffefe;
+    text-align: center;
+}
+.Admin_container .main_right .profile-box h1{
+    background-color: #b7d6d6;
+    color: rgb(157, 209, 172);
+    padding: 05px;
+    margin-left: 01dvw;
+    margin-top: 0.01%;
+    
+    
+    
+    overflow: hidden;
+    animation: animate 6s linear;
+    -webkit-text-stroke: 0.1vw rgba(255, 255, 255, 0.906);
+}
+
+@keyframes animate {
+    0%,10%{
+        width: 0;
+        transform: rotate(180);
+    }
+    70%,80%{
+        width: 93.5%;
+        transform: rotate(360);
+    }
+}
+
+.Admin_container .main_right .profile-box .adminimg {
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+}
+.Admin_container .main_right .profile-box .adminimg:hover{
+    transform: scale(1.1);
+}
+.Admin_container button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 10px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: grab;
+}
+
+.Admin_container button:hover{
+	background: #a181de;
+}

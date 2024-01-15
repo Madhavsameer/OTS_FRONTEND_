@@ -1,0 +1,18 @@
+.form-control{
+  width: 250px;
+}
+
+
+#links button{
+  width: 150px;
+  margin-right: 30px;
+}
+
+
+#tutor-container{
+ position: absolute;
+ left: 40%;
+ background: url("https://previews.123rf.com/images/apostrophe/apostrophe1309/apostrophe130900007/22009180-abstract-green-background.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}

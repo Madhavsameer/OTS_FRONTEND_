@@ -1,0 +1,35 @@
+.containerr{
+    background-color: #fff;
+    color: blue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin: 15px;
+    margin-top: 70px;
+    padding: 15px;
+    line-height: 40px;
+    width: 400px;
+}
+
+.cn{
+    font-size: 1.8rem;
+    color: green;
+    text-align: center;
+
+}
+
+i{
+    color:  #000;
+}
+.py-4{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+h1{
+    position: absolute;
+    left: 40%;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-style: italic;
+    padding-bottom: 20px;
+}

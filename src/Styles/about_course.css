@@ -1,0 +1,108 @@
+*{
+   
+    padding: 0  px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: cursive;
+}   
+
+.mainContainer{
+    background-color: rgb(240, 239, 239);
+}
+.courseContainer {
+    margin: 10px 20px 10px 20px;  
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.875rem;
+    text-align: center;
+}
+
+.courseContainer .Courses {
+  background-color: #c15454;
+  padding: 0%;
+  height: 700px;
+  margin: 10px 10px 30px 10px;
+  flex: 22%;
+  text-align: left;
+  font-size: 1.2rem;
+  transition: all 0.3s ease ;
+}
+.courseContainer .Courses > h1{
+    margin: 30px 0px 20px 0px;
+    text-align: center;
+    color: white;
+}
+.courseContainer .Courses:hover{
+  transform: scale(1);
+}
+.courseContainer .Courses:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+} 
+
+.courseContainer .Courses>img{
+    height: 50%;
+    width: 90%;
+    background-size: cover;
+    margin: 10% 0% 10% 5%;
+}
+
+.courseContainer .Courses>button{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin: 10px;
+  }
+.courseContainer .Courses>button {background-color: #3e8e41}
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:teal;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#4c9e9e;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+}

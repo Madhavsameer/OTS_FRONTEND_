@@ -1,0 +1,55 @@
+body{
+  text-align: center;
+}
+
+.card-btns{
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.card-btns button{
+  padding: 10px;
+  background-color: blue;
+  border: none;
+  color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.card-btns button:hover{
+  background-color: #fff;
+  color: blue;
+}
+
+.form{
+  background-color: orange;
+  color: #fff;
+  height: 300px;
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.inputt{
+padding-top: 40px;
+font-size: 1.3rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.inputt input{
+  padding: 5px;
+}
+
+.inputt div{
+  padding-top: 20px;
+}
+
+.form .button-container input{
+  margin-top: 20px;
+  padding: 6px 10px;
+  background: blue;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
