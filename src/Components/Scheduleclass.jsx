@@ -16,6 +16,7 @@ function Scheduleclass() {
            <input type="text" name="name" placeholder=''/><br></br>
            <label for="about"><b>About:</b></label><br></br>
            <input type="email" name="email"  placeholder=''/><br></br>
+           <br />
 <label for="Sem"><b>Semester:</b></label>
 <select name="sem" id="sem">
     <option value="sem1">sem1</option>
@@ -49,9 +50,11 @@ function Scheduleclass() {
              
 <label for="date"><b>Date:</b></label>
 <input type="date" id="date" aria-describedby="date-format" name="date" min="2000-01-01" max="3000-01-01" />
+<br />
+
 
            
-          <Link  to="/Admin"> <button className="btn btn-primary" type="submit">Add Schedule</button></Link>
+          <Link  to="/Admin"> <button className="btn btn-primary" id="schedule" type="submit">Add Schedule</button></Link>
           
     </div>
     </div>
