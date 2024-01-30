@@ -32,8 +32,8 @@ function Scheduleclass() {
 <br />
 <label for="new"><b>Tutor:</b></label>
 <select name="tut" id="tut">
-    <option>Dr.Debendra Maharana</option>
-  <option>Dr.Ashish Ranjan Dash</option>
+    <option>Mr.Debendra Maharana</option>
+  <option>Dr.Dhaleshwar Rao</option>
   <option>Kirtidev Mahaptro</option>
   <option>Ms.Arya Lopa</option>
   <option>Anshuman Pattnaik</option>
