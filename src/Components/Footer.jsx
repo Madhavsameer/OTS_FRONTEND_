@@ -53,7 +53,7 @@ const Footer = () => {
   </div>
 
   <div className="copy" >
-    © 2020 Copyright:
+    © 2024 Copyright: Designed & Developed bY CENTURION UNIVERSITY
   </div>
   </center>
 </div>

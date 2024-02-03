@@ -1,6 +1,8 @@
  import '../Styles/Tutor.css'
  import {Link} from "react-router-dom";
 import { Button } from 'reactstrap';
+
+<public></public>
  
  const Tutor = () =>{
     return(
@@ -15,9 +17,29 @@ import { Button } from 'reactstrap';
             </div>
             <div className='bio'>
                 <h3>Bio</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>Consectetur quisquam quaerat harum corrupti dignissimos <br/>repudiandae, animi eius libero. Doloremque nobis omnis <br/>consectetur non quos illum temporibus tenetur reprehenderit culpa.</p>
+                <p>I am a Software Technologies professor at CENTURION UNIVERSITY <br/></p>
+            </div>
+            <br />
+            <div>
+                <th>
+                    <tr>
+                        <td ><a href="https://madhavmeets.netlify.app" target="_blank" rel="noopener noreferrer">
+        <button class='myclass'> <img src="myclass.jpeg" alt="" height="10px" /> Join classes </button> </a>
+        <br /></td>
+        <td ><a href="https://madhavmeets.netlify.app" target="_blank" rel="noopener noreferrer">
+        <button class='myclass'> <img src="myclass.jpeg" alt="" height="10px" /> Attendance </button> </a>
+        <br /></td>
+        <td ><a href="https://madhavmeets.netlify.app" target="_blank" rel="noopener noreferrer">
+        <button class='myclass'> <img src="myclass.jpeg" alt="" height="10px" /> Assignment </button> </a>
+        <br /></td>
+        
+        </tr>
+        </th>
+            
             </div>
             <h2>Tutor Offered Courses</h2>
+            
+            
         </div>
     );
 }

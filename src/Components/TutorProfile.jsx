@@ -1,7 +1,8 @@
 import PageHeader from "./PageHeader";
 import Tutor from "./Tutor";
 import Container from "./Container_course";
-import UpComing from "./UpComing";
+// import UpComing from "./UpComing";
+import Footer from "./Footer";
 
 const TutorProfile = () =>{
     return(
@@ -9,7 +10,9 @@ const TutorProfile = () =>{
             <PageHeader/>
             <Tutor/>
             <Container/>
-            <UpComing/>
+            {/* <UpComing/> */}
+            <Footer/>
+
         </div>
     );
 
