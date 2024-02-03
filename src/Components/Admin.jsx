@@ -26,7 +26,7 @@ export default function Admin()
                         
                         <a href="madhavmeet.netlify.app"></a>
                         
-                        {/* <Link to ="https://sivadass.github.io/react-meeting-room/"><button>Add Class Schedule</button></Link> */}
+                        
                         <Link to="/Feedback"><button>View Feedback</button></Link>
                         
                         <Link to ="/addprof"><button>ADD PROFFESOR</button></Link>
