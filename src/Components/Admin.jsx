@@ -19,7 +19,14 @@ export default function Admin()
                         <img src="https://www.pngmart.com/files/21/Admin-Profile-PNG-Clipart.png" class="adminimg" alt="adminImage" />
                         <Link to="/AddCourse"><button>Add Course</button></Link>
 
-                        <Link to ="/AddSchedule"><button>Add Class Schedule</button></Link>
+                        {/* <Link to ="/AddSchedule"><button>Add Class Schedule</button></Link> */}
+                        <a href="https://madhavmeet.netlify.app" target="_blank" rel="noopener noreferrer">
+        <button>Add Class Schedule</button>
+      </a>
+                        
+                        <a href="madhavmeet.netlify.app"></a>
+                        
+                        {/* <Link to ="https://sivadass.github.io/react-meeting-room/"><button>Add Class Schedule</button></Link> */}
                         <Link to="/Feedback"><button>View Feedback</button></Link>
                         
                         <Link to ="/addprof"><button>ADD PROFFESOR</button></Link>

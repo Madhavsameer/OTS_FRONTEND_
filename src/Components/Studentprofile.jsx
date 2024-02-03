@@ -23,10 +23,10 @@ function Studentprofile() {
   return (
       <div className='background1'>
         <PageHeader/>
-        {/* <div className='userDetails'>
+        <div className='userDetails'>
           <i class="fa-solid fa-user" id="userProf"></i>
           <p>{Email}</p>
-        </div> */}
+        </div>
         <div className='info'>
          <form className='form-info'>
           <div>

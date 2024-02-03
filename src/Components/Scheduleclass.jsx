@@ -54,7 +54,7 @@ function Scheduleclass() {
 
 
            
-          <Link  to="/Admin"> <button className="btn btn-primary" id="schedule" type="submit">Add Schedule</button></Link>
+          <Link  to="/Admin"> <button className="btn btn-primary" id="schedule" type="submit" >Add Schedule</button></Link>
           
     </div>
     </div>
