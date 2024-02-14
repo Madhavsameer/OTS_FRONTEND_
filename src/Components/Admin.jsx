@@ -24,7 +24,7 @@ export default function Admin()
         <button>Add Class Schedule</button>
       </a>
                         
-                        <a href="madhavmeet.netlify.app"></a>
+        
                         
                         
                         <Link to="/Feedback"><button>View Feedback</button></Link>

@@ -1,6 +1,7 @@
  import '../Styles/Tutor.css'
  import {Link} from "react-router-dom";
 import { Button } from 'reactstrap';
+import Dashboard from './Dashboard';
 
 <public></public>
  
@@ -21,20 +22,8 @@ import { Button } from 'reactstrap';
             </div>
             <br />
             <div>
-                <th>
-                    <tr>
-                        <td ><a href="https://madhavmeets.netlify.app" target="_blank" rel="noopener noreferrer">
-        <button class='myclass'> <img src="myclass.jpeg" alt="" height="10px" /> Join classes </button> </a>
-        <br /></td>
-        <td ><a href="https://madhavmeets.netlify.app" target="_blank" rel="noopener noreferrer">
-        <button class='myclass'> <img src="myclass.jpeg" alt="" height="10px" /> Attendance </button> </a>
-        <br /></td>
-        <td ><a href="https://madhavmeets.netlify.app" target="_blank" rel="noopener noreferrer">
-        <button class='myclass'> <img src="myclass.jpeg" alt="" height="10px" /> Assignment </button> </a>
-        <br /></td>
-        
-        </tr>
-        </th>
+                
+        <Dashboard/>
             
             </div>
             <h2>Tutor Offered Courses</h2>

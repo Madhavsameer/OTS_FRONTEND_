@@ -1,0 +1,41 @@
+.dashboard-container {
+    text-align: center;
+}
+
+.options {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+
+.option-link {
+    text-decoration: none;
+    color: #333;
+    margin: 10px;
+}
+
+.option {
+    display: inline-block; /* Display options next to each other */
+    text-align: center;
+    margin: 0 10px; /* Add some horizontal margin to create space between options */
+}
+
+.option img {
+    width: 100px; /* Set the width of the images */
+    height: 100px; /* Set the height of the images */
+    margin-bottom: 10px; /* Add some space between the image and the text */
+}
+
+.option p {
+    margin: 0; /* Remove default margins for the text */
+}
+
+
+.option:hover {
+    background-color: #7de0d1;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
