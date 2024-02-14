@@ -14,7 +14,7 @@ function Dashboard() {
             <h2>Welcome to Your Dashboard</h2>
             <div className="options" style={{display: 'flex' ,flexWrap: 'wrap'}}>
                 
-                <a href="https://madhavmeet.netlify.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://madhavmeets.netlify.app" target="_blank" rel="noopener noreferrer">
                   {/* <Link to="attendance" className="option-link" target="_blank" rel="noopener noreferrer" > */}
                     <div className="option">
                         <img src={myclass} alt="Attendance" style={{ width: '100px', height: '100px' }}/>
