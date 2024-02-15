@@ -8,6 +8,7 @@ import studyMaterialImage from './studymaterial.png';
 import UploadWork from './UploadWork';
 import myclass from './myclass.jpeg';
 import dashboard from '../Styles/dashboard.css';
+import FeedbackList from './FeedbackList';
 
 function Dashboard() {
     return (
@@ -36,7 +37,7 @@ function Dashboard() {
                         <p>Assignments</p>
                     </div>
                 </Link>
-                <Link to="/feedback" className="option-link">
+                <Link to="/FeedbackList" className="option-link">
                     <div className="option">
                         <img src={feedbackImage} alt="Feedback" style={{ width: '100px', height: '100px' }} />
                         <p>Feedback</p>

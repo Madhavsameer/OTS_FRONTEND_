@@ -1,0 +1,41 @@
+/* FeedbackList.css */
+.feedback-list-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.feedback-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feedback-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-message {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.feedback-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-rating {
+    color: #FFD700;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* Additional styles for better spacing and readability (adjust as needed) */
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
