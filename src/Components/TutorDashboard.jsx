@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import attendanceImage from './attendance.png'; // Import your images
+import attendanceImage from './attendance.png'; // Import your images
 // import joinClassesImage from './join-classes.png';
-// import assignmentsImage from './assignments.png';
-// import feedbackImage from './feedback.png';
-// import studyMaterialImage from './study-material.png';
+import assignmentsImage from './assignment.jpeg';
+import feedbackImage from './feedback.jpeg';
+import studyMaterialImage from './studymaterial.png';
 import UploadWork from './UploadWork';
 import myclass from './myclass.jpeg';
 import dashboard from '../Styles/dashboard.css';
@@ -26,25 +26,25 @@ function Dashboard() {
                
                 <Link to="/join-classes" className="option-link">
                     <div className="option">
-                        <img src={myclass} alt="Join Classes" style={{ width: '100px', height: '100px' }}/>
+                        <img src={attendanceImage} alt="Join Classes" style={{ width: '100px', height: '100px' }}/>
                         <p>Attendance</p>
                     </div>
                 </Link>
                 <Link to="/ViewAssgn" className="option-link">
                     <div className="option">
-                        <img src={myclass} alt="Assignments" style={{ width: '100px', height: '100px' }}/>
+                        <img src={assignmentsImage} alt="Assignments" style={{ width: '100px', height: '100px' }}/>
                         <p>Assignments</p>
                     </div>
                 </Link>
                 <Link to="/feedback" className="option-link">
                     <div className="option">
-                        <img src={myclass} alt="Feedback" style={{ width: '100px', height: '100px' }} />
+                        <img src={feedbackImage} alt="Feedback" style={{ width: '100px', height: '100px' }} />
                         <p>Feedback</p>
                     </div>
                 </Link>
                 <Link to="/study-material" className="option-link">
                     <div className="option">
-                        <img src={myclass} alt="Study Material" style={{ width: '100px', height: '100px' }} />
+                        <img src={studyMaterialImage} alt="Study Material" style={{ width: '100px', height: '100px' }} />
                         <p>Study Material</p>
                     </div>
                 </Link>
