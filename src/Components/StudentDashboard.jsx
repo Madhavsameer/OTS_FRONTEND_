@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 // import assignmentsImage from './assignments.png';
 // import feedbackImage from './feedback.png';
 // import studyMaterialImage from './study-material.png';
+import UploadWork from './UploadWork';
 import myclass from './myclass.jpeg';
 import dashboard from '../Styles/dashboard.css';
 
@@ -29,7 +30,7 @@ function Dashboard() {
                         <p>Attendance</p>
                     </div>
                 </Link>
-                <Link to="/assignments" className="option-link">
+                <Link to="/UploadWork" className="option-link">
                     <div className="option">
                         <img src={myclass} alt="Assignments" style={{ width: '100px', height: '100px' }}/>
                         <p>Assignments</p>

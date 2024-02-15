@@ -3,7 +3,7 @@ import '../Styles/Studentprofile.css';
 import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import PageHeader from './PageHeader';
-import Dashboard from './Dashboard';
+import Dashboard from './StudentDashboard';
 import Footer from './Footer';
 let axios = require('axios');
 let Email=localStorage.getItem("email");

@@ -64,7 +64,7 @@ function App() {
         <Route path="/Studentprofile" element={<Studentprofile />} />
         <Route path="/ViewAssgn" element={<ViewAssess/>} />
         <Route path="/Onlinemeeting" element={<OnlineMeeting />} />
-        <Route path="/Upload" element={<UploadWork />} />
+        <Route path="/UploadWork" element={<UploadWork />} />
         
         <Route path="/StudentMYmeeting" element={<StudentMYmeeting />} />
 

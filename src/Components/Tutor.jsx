@@ -1,7 +1,7 @@
  import '../Styles/Tutor.css'
  import {Link} from "react-router-dom";
 import { Button } from 'reactstrap';
-import Dashboard from './Dashboard';
+import TutorDashboard from './TutorDashboard'
 
 <public></public>
  
@@ -22,8 +22,9 @@ import Dashboard from './Dashboard';
             </div>
             <br />
             <div>
+                <TutorDashboard/>
                 
-        <Dashboard/>
+        
             
             </div>
             <h2>Tutor Offered Courses</h2>
