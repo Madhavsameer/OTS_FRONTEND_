@@ -36,6 +36,9 @@ import FindUser from "./users/FindUser";
 import FeedbackForm from "./Components/FeedbackForm";
 import FeedbackList from "./Components/FeedbackList";
 
+import VideoList from "./Components/VideoList";
+import FileUpload from "./Components/FileUpload";
+
 
 function App() {
   return (
@@ -64,7 +67,7 @@ function App() {
 
 
 
-        <Route path="/Studentprofile" element={<Studentprofile />} />
+        <Route path="/Studentdash" element={<Studentprofile />} />
         <Route path="/ViewAssgn" element={<ViewAssess/>} />
         <Route path="/Onlinemeeting" element={<OnlineMeeting />} />
         <Route path="/UploadWork" element={<UploadWork />} />
@@ -75,7 +78,7 @@ function App() {
 
 
         <Route path="/Tutor_Info" element={<Tutor_Info />} />
-        <Route path="/TutorProfile" element={<TutorProfile />} />
+        <Route path="/Tutordash" element={<TutorProfile />} />
 
 
 
@@ -89,6 +92,9 @@ function App() {
         <Route path="/Media" element={<Media />} />
         <Route exact path="/feedbackform" element={<FeedbackForm />} />
         <Route exact path="/feedbacklist" element={<FeedbackList />} />
+        
+          <Route exact path="/fileupload" element={<FileUpload />} />
+          <Route exact path="/videolist" element={<VideoList />} />
        
         </Routes>
       </Router>

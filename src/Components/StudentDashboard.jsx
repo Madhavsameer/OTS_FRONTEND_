@@ -43,7 +43,7 @@ function Dashboard() {
                         <p>Feedback</p>
                     </div>
                 </Link>
-                <Link to="/study-material" className="option-link">
+                <Link to="/VideoList" className="option-link">
                     <div className="option">
                         <img src={studyMaterialImage} alt="Study Material" style={{ width: '100px', height: '100px' }} />
                         <p>Study Material</p>
