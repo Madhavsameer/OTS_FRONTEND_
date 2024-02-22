@@ -73,7 +73,7 @@ function App() {
         <Route path="/Onlinemeeting" element={<OnlineMeeting />} />
         <Route path="/UploadWork" element={<UploadWork />} />
         
-        <Route path="/StudentMYmeeting" element={<StudentMYmeeting />} />
+        <Route path="/StudentMYmeeting" element={<StudentMYmeeting/>} />
 
 
 
