@@ -109,12 +109,3 @@ export default App;
 
 
 
-// {
-//   "email":"naseersonu3@gmail.com",
-//   "username":"Abdul",
-//   "gender":"male",
-//   "address":"src",
-//   "mobile":"7077469273",
-//   "password":"123456",
-//   "profession":"student"
-// }
