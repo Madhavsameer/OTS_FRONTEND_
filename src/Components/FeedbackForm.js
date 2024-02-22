@@ -13,7 +13,7 @@ const FeedbackForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/api/feedback/post', { message, rating });
+            const response = await axios.post('http://localhost:8082/api/feedback/post', { message, rating });
             console.log('Feedback submitted:', response.data);
             alert("Feedback Submitted Successfully 😊");
             // Optionally, you can show a success message or reset the form here

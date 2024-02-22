@@ -9,7 +9,7 @@ function VideoList() {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/videos/list');
+        const response = await axios.get('http://localhost:8082/api/videos/list');
         setVideos(response.data);
       } catch (error) {
         console.error('Error fetching videos:', error);

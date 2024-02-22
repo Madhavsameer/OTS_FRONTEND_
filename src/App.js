@@ -67,7 +67,7 @@ function App() {
 
 
 
-        <Route path="/Studentdash" element={<Studentprofile />} />
+        <Route path="/Studentprofile" element={<Studentprofile />} />
         <Route path="/ViewAssgn" element={<ViewAssess/>} />
         <Route path="/Onlinemeeting" element={<OnlineMeeting />} />
         <Route path="/UploadWork" element={<UploadWork />} />
@@ -78,7 +78,7 @@ function App() {
 
 
         <Route path="/Tutor_Info" element={<Tutor_Info />} />
-        <Route path="/Tutordash" element={<TutorProfile />} />
+        <Route path="/TutorProfile" element={<TutorProfile />} />
 
 
 
@@ -90,6 +90,7 @@ function App() {
         <Route path="/meet" element={<ZHome />} />
         <Route path="/room/:roomID" element={<Room />} />
         <Route path="/Media" element={<Media />} />
+        
         <Route exact path="/feedbackform" element={<FeedbackForm />} />
         <Route exact path="/feedbacklist" element={<FeedbackList />} />
         

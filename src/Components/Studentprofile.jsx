@@ -10,7 +10,7 @@ let Email=localStorage.getItem("email");
 
 const userDetils = async()=>{
   try{
-    var myObj =  await axios.get(`http://localhost:8080/userprofileDetails/${Email}`);
+    var myObj =  await axios.get(`http://localhost:8082/userprofileDetails/${Email}`);
     document.getElementById ("1m").value=myObj.data[0].username;
     document.getElementById ("2m").value=myObj.data[0].mobile;
     document.getElementById ("3m").value=myObj.data[0].userid;
