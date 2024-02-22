@@ -15,7 +15,7 @@ export default function Navbarr() {
       <Container>
       <Link className="navbar-brand" to="/">
       <FaDelicious />
-            #AbbShikshaGharSe😊
+            #UP_TURN
           </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">

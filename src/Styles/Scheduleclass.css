@@ -8,11 +8,12 @@
 .background-container{
   border: 1px solid #000;
   width: 40%;
+  height: 60%;
   margin: 50px;
   padding: 30px;
   border-radius: 10px;
-  background-color: #6c757d;
-  color: #fff;
+  background-color: #cfe1f0;
+  color: #000000;
 }
 
 .background-container div{
@@ -29,15 +30,18 @@
   right: 150px;
   
 }
-/* button {
+#schedule {
   border: 9;
-  border-radius: 90px;
+  border-radius: 10pxpx;
   background: rgb(27, 197, 27);
+  color: rgb(114, 212, 212);
+  
   top: 10px;
-  width: 45%;
+  width: 35%;
+  height: 40px;
   padding: 13px 9px;
   position: relative;
   text-align: center;
   left: 64px;
   color: rgb(87, 5, 5);
-} */
+}

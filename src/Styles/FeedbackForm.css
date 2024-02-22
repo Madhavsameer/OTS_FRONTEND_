@@ -1,0 +1,49 @@
+
+.feedback-form {
+    max-width: 400px;
+    margin: 20px auto;
+    color: rgb(217, 107, 17);
+    background-color: rgb(229, 235, 235);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.star-rating {
+    display: flex;
+    margin-top: 5px;
+}
+
+.star-rating label {
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(98, 91, 91);
+}
+
+.star-rating label.filled {
+    color: #e8c725; /* Set the color for filled stars */
+}
+.star-rating :hover {
+    color: #ddd8bd; /* Set the color for filled stars */
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #ef5a5a;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

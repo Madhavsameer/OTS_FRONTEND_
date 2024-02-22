@@ -27,12 +27,18 @@ import UploadWork from "./Components/UploadWork";
 
 
 
+
 import Home_Main from "./pages/Home_Main";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AddUser from "./users/AddUser";
 import EditUser from "./users/EditUser";
 import ViewUser from "./users/ViewUser";
 import FindUser from "./users/FindUser";
+import FeedbackForm from "./Components/FeedbackForm";
+import FeedbackList from "./Components/FeedbackList";
+
+import VideoList from "./Components/VideoList";
+import FileUpload from "./Components/FileUpload";
 
 
 function App() {
@@ -62,10 +68,10 @@ function App() {
 
 
 
-        <Route path="/Studentprofile" element={<Studentprofile />} />
+        <Route path="/Studentdash" element={<Studentprofile />} />
         <Route path="/ViewAssgn" element={<ViewAssess/>} />
         <Route path="/Onlinemeeting" element={<OnlineMeeting />} />
-        <Route path="/Upload" element={<UploadWork />} />
+        <Route path="/UploadWork" element={<UploadWork />} />
         
         <Route path="/StudentMYmeeting" element={<StudentMYmeeting />} />
 
@@ -73,7 +79,7 @@ function App() {
 
 
         <Route path="/Tutor_Info" element={<Tutor_Info />} />
-        <Route path="/TutorProfile" element={<TutorProfile />} />
+        <Route path="/Tutordash" element={<TutorProfile />} />
 
 
 
@@ -85,6 +91,11 @@ function App() {
         <Route path="/meet" element={<ZHome />} />
         <Route path="/room/:roomID" element={<Room />} />
         <Route path="/Media" element={<Media />} />
+        <Route exact path="/feedbackform" element={<FeedbackForm />} />
+        <Route exact path="/feedbacklist" element={<FeedbackList />} />
+        
+          <Route exact path="/fileupload" element={<FileUpload />} />
+          <Route exact path="/videolist" element={<VideoList />} />
        
         </Routes>
       </Router>
