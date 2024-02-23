@@ -3,30 +3,26 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import ZHome from "./Zego/ZHome";
 import Room from "./Room";
 
-import Search_courses from './Components/Search_courses' ;//prblm
+import Search_courses from "./Components/Search_courses"; //prblm
 import Studentprofile from "./Components/Studentprofile";
 import StudentMYmeeting from "./Components/StudentMYmeeting";
- import OnlineMeeting from "./Components/OnlineMeeting";
+import OnlineMeeting from "./Components/OnlineMeeting";
 import UploadWork from "./Components/UploadWork";
- import ViewAssess from "./Components/ViewAssess";
- import Tutor_Info from "./Components/Tutor_Info"; 
- import TutorProfile from './Components/TutorProfile';
- import Admin from "./Components/Admin";
- import Courseadd from "./Components/Courseadd";
- import Scheduleclass from "./Components/Scheduleclass";
- import About_course from "./Components/About_course";
- import Video from "./Components/Video";
- import Home from "./Components/Home";
- import Feedback from "./Components/Feedback";
- import Student_List from "./Components/Student_List";
- import Tutor_List from "./Components/Tutor_List";
- import Addprof from "./users/Addprof";
- import Media from "./Components/Media";
- //hii
-
-
-
-
+import ViewAssess from "./Components/ViewAssess";
+import Tutor_Info from "./Components/Tutor_Info";
+import TutorProfile from "./Components/TutorProfile";
+import Admin from "./Components/Admin";
+import Courseadd from "./Components/Courseadd";
+import Scheduleclass from "./Components/Scheduleclass";
+import About_course from "./Components/About_course";
+import Video from "./Components/Video";
+import Home from "./Components/Home";
+import Feedback from "./Components/Feedback";
+import Student_List from "./Components/Student_List";
+import Tutor_List from "./Components/Tutor_List";
+import Addprof from "./users/Addprof";
+import Media from "./Components/Media";
+//hii
 
 import Home_Main from "./pages/Home_Main";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -39,7 +35,8 @@ import FeedbackList from "./Components/FeedbackList";
 
 import VideoList from "./Components/VideoList";
 import FileUpload from "./Components/FileUpload";
-
+import Attendance from "./Components/Attendance";
+import TutorAttendance from "./Components/TutorAttendance";
 
 function App() {
   return (
@@ -52,60 +49,46 @@ function App() {
           <Route exact path="/Home" element={<Home />} />
           <Route exact path="/adduser" element={<AddUser />} />
           <Route exact path="/finduser" element={<FindUser />} />
-          <Route exact path="/Student_list" element={<Student_List/>}/>
-          <Route exact path="/Tutor_list" element={<Tutor_List/>}/>
+          <Route exact path="/Student_list" element={<Student_List />} />
+          <Route exact path="/Tutor_list" element={<Tutor_List />} />
           <Route exact path="/edituser/:email" element={<EditUser />} />
           <Route exact path="/viewuser/:email" element={<ViewUser />} />
           <Route exact path="/addprof" element={<Addprof />} />
 
-
-
           <Route path="/Search_courses" element={<Search_courses />} />
-        <Route path="/Aboutcourse" element={<About_course />} />
-        <Route path="/Video" element={<Video />} />
+          <Route path="/Aboutcourse" element={<About_course />} />
+          <Route path="/Video" element={<Video />} />
 
+          <Route path="/Studentprofile" element={<Studentprofile />} />
+          <Route path="/ViewAssgn" element={<ViewAssess />} />
+          <Route path="/Onlinemeeting" element={<OnlineMeeting />} />
+          <Route path="/UploadWork" element={<UploadWork />} />
 
+          <Route path="/StudentMYmeeting" element={<StudentMYmeeting />} />
 
+          <Route path="/Tutor_Info" element={<Tutor_Info />} />
+          <Route path="/TutorProfile" element={<TutorProfile />} />
 
+          <Route path="/Admin" element={<Admin />} />
+          <Route path="/AddCourse" element={<Courseadd />} />
+          <Route path="/AddSchedule" element={<Scheduleclass />} />
+          <Route path="/Feedback" element={<Feedback />} />
 
-        <Route path="/Studentprofile" element={<Studentprofile />} />
-        <Route path="/ViewAssgn" element={<ViewAssess/>} />
-        <Route path="/Onlinemeeting" element={<OnlineMeeting />} />
-        <Route path="/UploadWork" element={<UploadWork />} />
-        
-        <Route path="/StudentMYmeeting" element={<StudentMYmeeting/>} />
+          <Route path="/meet" element={<ZHome />} />
+          <Route path="/room/:roomID" element={<Room />} />
+          <Route path="/Media" element={<Media />} />
 
+          <Route exact path="/feedbackform" element={<FeedbackForm />} />
+          <Route exact path="/feedbacklist" element={<FeedbackList />} />
 
-
-
-        <Route path="/Tutor_Info" element={<Tutor_Info />} />
-        <Route path="/TutorProfile" element={<TutorProfile />} />
-
-
-
-        <Route path="/Admin" element={<Admin />} />
-        <Route path="/AddCourse" element={<Courseadd />} />
-        <Route path="/AddSchedule" element={<Scheduleclass />} />
-        <Route path="/Feedback" element={<Feedback />} />
-
-        <Route path="/meet" element={<ZHome />} />
-        <Route path="/room/:roomID" element={<Room />} />
-        <Route path="/Media" element={<Media />} />
-        
-        <Route exact path="/feedbackform" element={<FeedbackForm />} />
-        <Route exact path="/feedbacklist" element={<FeedbackList />} />
-        
           <Route exact path="/fileupload" element={<FileUpload />} />
           <Route exact path="/videolist" element={<VideoList />} />
-       
+          <Route exact path="/attendance" element={<Attendance />} />
+          <Route exact path="/tutorattendance" element={<TutorAttendance />} />
         </Routes>
       </Router>
-      
     </div>
   );
 }
 
 export default App;
-
-
-
