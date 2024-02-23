@@ -47,6 +47,7 @@ function Dashboard() {
             <img
               src={assignmentsImage}
               alt="Assignments"
+              //hgbghj
               style={{ width: "100px", height: "100px" }}
             />
             <p>Assignments</p>
