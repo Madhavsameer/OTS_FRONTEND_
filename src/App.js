@@ -3,7 +3,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import ZHome from "./Zego/ZHome";
 import Room from "./Room";
 
-import Search_courses from "./Components/Search_courses"; //prblm
+import Search_courses from "./Components/Search_courses"; 
 import Studentprofile from "./Components/Studentprofile";
 import StudentMYmeeting from "./Components/StudentMYmeeting";
 import OnlineMeeting from "./Components/OnlineMeeting";
