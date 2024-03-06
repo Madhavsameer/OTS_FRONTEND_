@@ -37,6 +37,7 @@ import VideoList from "./Components/VideoList";
 import FileUpload from "./Components/FileUpload";
 import Attendance from "./Components/Attendance";
 import TutorAttendance from "./Components/TutorAttendance";
+import StudentGrades from "./Components/StudentGrades";
 
 function App() {
   return (
@@ -85,6 +86,7 @@ function App() {
           <Route exact path="/videolist" element={<VideoList />} />
           <Route exact path="/attendance" element={<Attendance />} />
           <Route exact path="/tutorattendance" element={<TutorAttendance />} />
+          <Route exact path="/studentgrades" element={<StudentGrades />} />
         </Routes>
       </Router>
     </div>

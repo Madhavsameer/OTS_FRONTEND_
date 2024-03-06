@@ -1,0 +1,133 @@
+/* Container */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+#repmess {
+  text-align: center;
+  margin-bottom: 20px;
+  
+  color: #843939;
+  font-size: x-large;
+}
+
+/* Form */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-color: #0056b3;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00ff62;
+  color: #db4e4e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.print-button {
+  background-color: #979af3;
+  color: #473e3e;
+  padding: 7px 7px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 90%;
+  margin-top: 50px;
+}
+
+.print-button:hover {
+  background-color: hsl(211, 74%, 54%);
+  background-image: url();
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.table td {
+  background-color: #f2f2f2;
+}
+
+/* Table Hover Effect */
+.table tr:hover {
+  background-color: #e6e6e6;
+  transform: scale(1.02);
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Congrats Message */
+.congrats-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
