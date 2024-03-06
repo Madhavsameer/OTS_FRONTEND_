@@ -5,7 +5,7 @@ import attendanceImage from "./attendance.png"; // Import your images
 import assignmentsImage from "./assignment.jpeg";
 import feedbackImage from "./feedback.jpeg";
 import studyMaterialImage from "./studymaterial.png";
-import studym from "./studym.jpg"
+import rl from "./rl.png"
 import logout from "./logout.jpg"
 
 import myclass from "./myclass.jpeg";
@@ -14,7 +14,7 @@ import myclass from "./myclass.jpeg";
 function Dashboard() {
   return (
     <div className="dashboard-container">
-      <h2>Welcome to Your Dashboard</h2>
+      <h2>Welcome to Your Dashboard Madhav😊</h2>
       <div className="options" style={{ display: "flex", flexWrap: "wrap" }}>
         <a
           href="https://madhavmeets.netlify.app"
@@ -67,11 +67,11 @@ function Dashboard() {
         <Link to="/VideoList" className="option-link">
           <div className="option">
             <img
-              src={studym}
+              src={rl}
               alt="Study Material"
               style={{ width: "100px", height: "100px" }}
             />
-            <p>Study Material</p>
+            <p>Recorded Lectures</p>
           </div>
         </Link>
         <Link to="/StudentGrades" className="option-link">

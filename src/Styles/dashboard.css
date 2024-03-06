@@ -34,8 +34,8 @@
 
 
 .option:hover {
-    background-color: #7de0d1;
+    background-color: #9eb1a2;
     transform: translateY(-2px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(156, 151, 151, 0.1);
 }
 
