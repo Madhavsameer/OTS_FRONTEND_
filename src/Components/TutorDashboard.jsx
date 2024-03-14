@@ -43,14 +43,14 @@ function Dashboard() {
             <p>Attendance</p>
           </div>
         </Link>
-        <Link to="/ViewAssgn" className="option-link">
+        <Link to="/UploadNotes" className="option-link">
           <div className="option">
             <img
               src={assignmentsImage}
               alt="Assignments"
               style={{ width: "100px", height: "100px" }}
             />
-            <p>Assignments</p>
+            <p>Notes</p>
           </div>
         </Link>
         <Link to="/FeedbackList" className="option-link">
@@ -63,7 +63,7 @@ function Dashboard() {
             <p>Feedback</p>
           </div>
         </Link>
-        <Link to="/FileUpload" className="option-link">
+        <Link to="/UploadVideos" className="option-link">
           <div className="option">
             <img
               src={rl}

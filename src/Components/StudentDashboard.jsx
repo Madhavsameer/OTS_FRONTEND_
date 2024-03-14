@@ -43,7 +43,7 @@ function Dashboard() {
             <p>Attendance</p>
           </div>
         </Link>
-        <Link to="/UploadWork" className="option-link">
+        <Link to="/ListNotes" className="option-link">
           <div className="option">
             <img
               src={assignmentsImage}
@@ -51,7 +51,7 @@ function Dashboard() {
               //hgbghj
               style={{ width: "100px", height: "100px" }}
             />
-            <p>Assignments</p>
+            <p>Notes</p>
           </div>
         </Link>
         <Link to="/FeedbackForm" className="option-link">
@@ -64,7 +64,7 @@ function Dashboard() {
             <p>Feedback</p>
           </div>
         </Link>
-        <Link to="/VideoList" className="option-link">
+        <Link to="/ListVideos" className="option-link">
           <div className="option">
             <img
               src={rl}

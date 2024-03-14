@@ -33,11 +33,14 @@ import FindUser from "./users/FindUser";
 import FeedbackForm from "./Components/FeedbackForm";
 import FeedbackList from "./Components/FeedbackList";
 
-import VideoList from "./Components/VideoList";
-import FileUpload from "./Components/FileUpload";
+
 import Attendance from "./Components/Attendance";
 import TutorAttendance from "./Components/TutorAttendance";
 import StudentGrades from "./Components/StudentGrades";
+import ListVideos from "./Components/ListVideos";
+import UploadVideos from "./Components/UploadVideos";
+import ListNotes from "./Components/ListNotes";
+import UploadNotes from "./Components/UploadNotes";
 
 function App() {
   return (
@@ -82,11 +85,14 @@ function App() {
           <Route exact path="/feedbackform" element={<FeedbackForm />} />
           <Route exact path="/feedbacklist" element={<FeedbackList />} />
 
-          <Route exact path="/fileupload" element={<FileUpload />} />
-          <Route exact path="/videolist" element={<VideoList />} />
+          
           <Route exact path="/attendance" element={<Attendance />} />
           <Route exact path="/tutorattendance" element={<TutorAttendance />} />
           <Route exact path="/studentgrades" element={<StudentGrades />} />
+          <Route exact path="/uploadvideos" element={<UploadVideos />} />
+          <Route exact path="/listvideos" element={<ListVideos />} />
+          <Route exact path="/uploadnotes" element={<UploadNotes />} />
+          <Route exact path="/listnotes" element={<ListNotes />} />
         </Routes>
       </Router>
     </div>
