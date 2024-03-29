@@ -6,7 +6,7 @@ const AllAttendance = () => {
   const [attendanceData, setAttendanceData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8082/api/attendance')
+    axios.get('http://localhost:8082/api/attendance/madhav sameer')
       .then(response => {
         // Calculate attendance status based on duration
         const updatedAttendanceData = response.data.map(record => ({
@@ -28,7 +28,9 @@ const AllAttendance = () => {
 
   return (
     <div>
-      <h2>All Students' Attendance</h2>
+      <h2>Your Attendance Record of Previous Classes are:-
+        
+      </h2>
       <div className="card-container">
         {attendanceData.map(record => (
           <div

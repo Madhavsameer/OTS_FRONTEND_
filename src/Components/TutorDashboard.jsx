@@ -6,6 +6,7 @@ import assignmentsImage from "./assignment.jpeg";
 import feedbackImage from "./feedback.jpeg";
 import rl from "./rl.png";
 import logout from "./logout.jpg";
+import assign from "./assign.png";
 import UploadWork from "./UploadWork";
 import myclass from "./myclass.jpeg";
 import dashboard from "../Styles/dashboard.css";
@@ -33,7 +34,7 @@ function Dashboard() {
           {/* </Link> */}
         </a>
 
-        <Link to="/tutorattendance" className="option-link">
+        <Link to="/Attendance" className="option-link">
           <div className="option">
             <img
               src={attendanceImage}
@@ -51,6 +52,16 @@ function Dashboard() {
               style={{ width: "100px", height: "100px" }}
             />
             <p>Notes</p>
+          </div>
+        </Link>
+        <Link to="/ListAssignment" className="option-link">
+          <div className="option">
+            <img
+              src={assign}
+              alt="Assignments"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Assignment</p>
           </div>
         </Link>
         <Link to="/FeedbackList" className="option-link">

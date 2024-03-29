@@ -1,0 +1,30 @@
+/* AllAttendance.css */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .card {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1 0 300px; /* Adjust width as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .present {
+    background-color: #d4edda;
+  }
+  
+  .absent {
+    background-color: #f8d7da;
+  }
+  

@@ -27,7 +27,7 @@ export default function Admin()
         
                         
                         
-                        <Link to="/Feedback"><button>View Feedback</button></Link>
+                        <Link to="/FeedbackList"><button>View Feedback</button></Link>
                         
                         <Link to ="/addprof"><button>ADD PROFFESOR</button></Link>
                         <Link to ="/Student_list"><button>Users</button></Link>

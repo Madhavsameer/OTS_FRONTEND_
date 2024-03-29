@@ -93,7 +93,7 @@ export default function FindUser() {
                   />
                 </div>
               </div>
-              <div className="button-container">
+              <div className="button-container" id="loginbutt">
                 <input type="submit" />
               </div>
               <p id="er"></p>
@@ -188,63 +188,7 @@ export default function FindUser() {
   }
 
   return (
-    // <>
-    //    <Navbarr/>
-    //    <div className="log_in">
-    // <div className="container">
-
-    //   <div className="row">
-    //     <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-    //       <h2 className="text-center m-4">Login User</h2>
-
-    //       <form onSubmit={(e) => onSubmit(e)}>
-
-    //         <div className="mb-3">
-    //           <label htmlFor="Email" className="form-label">
-    //             E-mail
-    //           </label>
-    //           <input
-    //             type={"text"}
-    //             className="form-control"
-    //             placeholder="Enter your e-mail address"
-    //             name="email"
-    //             value={email}
-    //             onChange={(e) => onInputChange(e) }
-    //           />
-    //         </div>
-    //         <div className="mb-3">
-    //           <label htmlFor="Password" className="form-label">
-    //             Password
-    //           </label>
-    //           <input
-    //             type={"text"}
-    //             className="form-control"
-    //             placeholder="Enter your passsword"
-    //             name="password"
-    //             value={password}
-    //             onChange={(e) => onInputChange(e) }
-    //           />
-    //         </div>
-    //       {/* <Link to="/Home">   */}
-    //       <button type="submit" className="btn btn-outline-primary">
-    //           Submit
-
-    //         </button>
-    //         {/* </Link> */}
-    //         <Link className="btn btn-outline-danger mx-2" to="/">
-    //           Cancel
-    //         </Link>
-    //         <br/>  <br/>  <br/>
-    //         <p id="er"></p>
-    //       </form>
-    //       <form>
-
-    //       </form>
-    //     </div>
-    //   </div>
-    //   </div>
-    //   </div>
-    // </>
+    
     <>
       <Navbarr />
       <div className="App">
