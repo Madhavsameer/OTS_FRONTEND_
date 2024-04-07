@@ -51,6 +51,8 @@ export default function AddUser() {
           <h2 className="text-centerz">Register Professor</h2>
 
           <form onSubmit={(e) => onSubmit(e)}>
+            <div className="regele">
+
             
             <div className="mb-3">
               <label htmlFor="Professorname" className="form-label">
@@ -200,9 +202,11 @@ export default function AddUser() {
            <button type="submit" className="btn btn-outline-primary" id="reg-submit">
               Submit
             </button>
+            <br />
             <Link className="btn btn-outline-danger mx-2" id="reg-cancel" to="/">
               Cancel
             </Link>
+            </div>
             <br/>  
             <p id="er"></p>
           </form>

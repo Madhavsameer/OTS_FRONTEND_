@@ -1,12 +1,19 @@
 /* AddUser.css */
 
 /* Container styles */
+
+.row{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
 .add-user-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #d2f8f1; /* Light background color */
+    background-color: #2e9e8a; /* Light background color */
+    
   }
   
   /* Form container styles */
@@ -16,6 +23,13 @@
     background-color: #f5f8f0; /* White background for form */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
+  .regele{
+    display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
   }
   
   /* Form title styles */

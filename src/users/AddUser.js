@@ -48,7 +48,7 @@ export default function AddUser() {
           <h2 className="text-centerz">Register User</h2>
 
           <form onSubmit={(e) => onSubmit(e)}>
-            
+            <div className="regele"> 
             <div className="mb-3">
               <label htmlFor="Username" className="form-label">
                 Username
@@ -150,14 +150,18 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
+           
           
            <button type="submit" className="btn btn-outline-primary" id="reg-submit">
               Submit
             </button>
+            <br />
+           
             <Link className="btn btn-outline-danger mx-2" id="reg-cancel" to="/">
               Cancel
             </Link>
-            <br/>  
+            </div>
+             
             <p id="er"></p>
           </form>
         </div>
