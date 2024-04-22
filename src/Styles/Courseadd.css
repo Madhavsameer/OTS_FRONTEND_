@@ -1,16 +1,114 @@
-.adding{
-  background-color:rgba(15, 236, 26, 0.662);
-  border-radius: 10px;
-  width:300px;
-  height:400px;
-  padding:80px;
-  box-shadow: 10px 10px 8px 10px #888888;
-  position: absolute;
-  left: 40%;
-  top: 20%;
-}
+AddUser.css
 
+/* Container styles */
 
-.adding button{
-  margin: 10px;
+.row{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
 }
+.add-user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #2e9e8a; /* Light background color */
+    
+  }
+  
+  /* Form container styles */
+  .form-container {
+    width: 800px;
+    padding: 20px;
+    background-color: #f5f8f0; /* White background for form */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
+  .regele{
+    display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  }
+  
+  /* Form title styles */
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333; /* Dark text color */
+  }
+  
+  /* Form group styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Form label styles */
+  .form-label {
+    font-weight: bold;
+    color: #555555; /* Medium-dark text color */
+  }
+  
+  /* Form control styles */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc; /* Light border color */
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out; /* Smooth border transition */
+  }
+  
+  /* Form control hover/focus styles */
+  .form-control:hover,
+  .form-control:focus {
+    border-color: #007bff; /* Primary color on hover/focus */
+  }
+  
+  /* Submit button styles */
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff; /* White text color */
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3; /* Darker color on hover */
+  }
+  
+  /* Cancel button styles */
+  .btn-cancel {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #dc3545; /* Danger button color */
+    color: #ffffff; /* White text color */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #c82333; /* Darker color on hover */
+  }
+  
+  /* Error message styles */
+  .error-message {
+    color: #ff6347; /* Red color for error messages */
+    font-weight: bold; /* Bold font weight for emphasis */
+  }
+  
+  /* Flexbox styles for form fields */
+  .user-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-form .form-group {
+    width: 100%;
+  }
+  

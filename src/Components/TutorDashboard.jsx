@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import attendanceImage from "./attendance.png"; // Import your images
-// import joinClassesImage from './join-classes.png';
-import assignmentsImage from "./assignment.jpeg";
-import feedbackImage from "./feedback.jpeg";
-import rl from "./rl.png";
-import logout from "./logout.jpg";
-import assign from "./assign.png";
-import UploadWork from "./UploadWork";
-import myclass from "./myclass.jpeg";
+import attendanceImage from "../assets/attendance.png"; 
+import assignmentsImage from "../assets/assignment.jpeg";
+import feedbackImage from "../assets/feedback.jpeg";
+import rl from "../assets/rl.png";
+import logout from "../assets/logout.jpg";
+import assign from "../assets/assign.png";
+import myclass from "../assets/myclass.jpeg";
+import Exam from "../assets/exam.jpeg";
+
+import studyMaterialImage from "../assets/studymaterial.png";
 import dashboard from "../Styles/dashboard.css";
-import FeedbackList from "./FeedbackList";
+
 
 function Dashboard() {
   return (
@@ -85,6 +86,17 @@ function Dashboard() {
           </div>
         </Link>
 
+        <Link to="/AdminTestScheduler" className="option-link">
+          <div className="option">
+            <img
+              src={Exam}
+              alt="Study Material"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Schedule Test</p>
+          </div>
+        </Link>
+
         <Link to="/" className="option-link">
           <div className="option">
             <img
@@ -96,7 +108,6 @@ function Dashboard() {
           </div>
         </Link>
       </div>
-      //hyjhcghgjhgfhjk
     </div>
   );
 }

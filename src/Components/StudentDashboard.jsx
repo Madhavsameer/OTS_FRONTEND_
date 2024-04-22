@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import attendanceImage from "./attendance.png"; // Import your images
 
-import assignmentsImage from "./assignment.jpeg";
-import feedbackImage from "./feedback.jpeg";
-import studyMaterialImage from "./studymaterial.png";
-import rl from "./rl.png"
-import logout from "./logout.jpg"
+import attendanceImage from "../assets/attendance.png"; 
+import assignmentsImage from "../assets/assignment.jpeg";
+import feedbackImage from "../assets/feedback.jpeg";
+import rl from "../assets/rl.png";
+import logout from "../assets/logout.jpg";
+import assign from "../assets/assign.png";
+import myclass from "../assets/myclass.jpeg";
 
-import myclass from "./myclass.jpeg";
-import assign from "./assign.png";
+import studyMaterialImage from "../assets/studymaterial.png";
+import Exam from "../assets/exam.jpeg";
+import dashboard from "../Styles/dashboard.css";
+
 
 
 function Dashboard() {
@@ -85,6 +88,18 @@ function Dashboard() {
             <p>Recorded Lectures</p>
           </div>
         </Link>
+
+        <Link to="/StudentTestList" className="option-link">
+          <div className="option">
+            <img
+              src={Exam}
+              alt="Study Material"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Take Exam</p>
+          </div>
+        </Link>
+
         <Link to="/StudentGrades" className="option-link">
           <div className="option">
             <img

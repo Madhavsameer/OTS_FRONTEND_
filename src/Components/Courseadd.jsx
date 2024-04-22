@@ -47,7 +47,7 @@ function Courseadd() {
             <h2 className="text-centerz">Register Course</h2>
   
             <form onSubmit={(e) => onSubmit(e)}>
-              
+              <div className="regele">
               <div className="mb-3">
                 <label htmlFor="Coursename" className="form-label">
                   Coursename
@@ -199,8 +199,10 @@ function Courseadd() {
               </Link>
               <br/>  
               <p id="er"></p>
+              </div>
             </form>
           </div>
+          
         </div>
       </div>
          )

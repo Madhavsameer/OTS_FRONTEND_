@@ -15,13 +15,19 @@ export default function AddUser() {
     mobile: "",
     password: "",
     profession: "",
+    
   });
+
+
+
+
 
   const { address, username, email,gender,mobile,password,profession } = user;
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
+
 
   const onSubmit = async (e) => {
     e.preventDefault();

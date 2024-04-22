@@ -22,6 +22,8 @@ import Student_List from "./Components/Student_List";
 import Tutor_List from "./Components/Tutor_List";
 import Addprof from "./users/Addprof";
 import Media from "./Components/Media";
+import StudentTestList from "./Components/StudentTestList";
+import AdminTestScheduler from "./Components/AdminTestScheduler";
 //hii
 
 import Home_Main from "./pages/Home_Main";
@@ -95,6 +97,8 @@ function App() {
           <Route exact path="/uploadnotes" element={<UploadNotes />} />
           <Route exact path="/listnotes" element={<ListNotes />} />
           <Route exact path="/listassignment" element={<ListAssignment />} />
+          <Route exact path="/AdminTestScheduler" element={<AdminTestScheduler />} />
+          <Route exact path="/StudentTestList" element={<StudentTestList />} />
         </Routes>
       </Router>
     </div>

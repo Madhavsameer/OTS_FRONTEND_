@@ -1,41 +1,122 @@
 import '../Styles/Admin.css';
 import{Link } from "react-router-dom";
 import Page_header   from "./PageHeader";
+import AddCourse from "../assets/AddCourse.png"; 
+import assignmentsImage from "../assets/assignment.jpeg";
+import feedbackImage from "../assets/feedback.jpeg";
+import prof from "../assets/Proffesors.png";
+import Tutors from "../assets/Tutors.png";
+import logout from "../assets/logout.jpg";
+import assign from "../assets/assign.png";
+import myclass from "../assets/myclass.jpeg";
+import exam from "../assets/exam.jpeg";
+import Users from "../assets/Users.png";
+import dashboard from "../Styles/dashboard.css";
+import Footer from "../layout/Footer.js";
+
 
 export default function Admin()
 {
     return (
         <div>
             <Page_header/>
-            <h1 id='myadmin'>Admin Profile</h1>
-            <div className="Admin_container">
-            
-                {/* <div className="main_left">
-                    <img src="https://bissafety.com/wp-content/uploads/2020/05/Man-taking-chainsaw-course-flattened-Shoulder-fixed-cropped-e1588020944198.png" alt="admin"/>
-                </div> */}
-                <div className="main_right">
-                    <div className="profile-box">
-                        
-                        <img src="https://www.pngmart.com/files/21/Admin-Profile-PNG-Clipart.png" class="adminimg" alt="adminImage" />
-                        <Link to="/AddCourse"><button>Add Course</button></Link>
+            <div className="dashboard-container">
+      <h2>Welcome Admin</h2>
+      <div className="options" style={{ display: "flex", flexWrap: "wrap" }}>
+        <a
+          href="https://madhavmeet.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {/* <Link to="attendance" className="option-link" target="_blank" rel="noopener noreferrer" > */}
+          <div className="option">
+            <img
+              src={myclass}
+              alt="Attendance"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Schedule Class</p>
+          </div>
+          {/* </Link> */}
+        </a>
 
-                        {/* <Link to ="/AddSchedule"><button>Add Class Schedule</button></Link> */}
-                        <a href="https://madhavmeet.netlify.app" target="_blank" rel="noopener noreferrer">
-        <button>Add Class Schedule</button>
-      </a>
-                        
+        <Link to="/AddCourse" className="option-link">
+          <div className="option">
+            <img
+              src={AddCourse}
+              alt="Add Course"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Add Course</p>
+          </div>
+        </Link>
+        <Link to="/addprof" className="option-link">
+          <div className="option">
+            <img
+              src={prof}
+              alt="Assignments"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Add Profesor</p>
+          </div>
+        </Link>
+        <Link to="/Student_List" className="option-link">
+          <div className="option">
+            <img
+              src={Users}
+              alt="Assignments"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Students List</p>
+          </div>
+        </Link>
+        <Link to="/FeedbackList" className="option-link">
+          <div className="option">
+            <img
+              src={feedbackImage}
+              alt="Feedback"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Feedback List</p>
+          </div>
+        </Link>
+        <Link to="/Tutor_List" className="option-link">
+          <div className="option">
+            <img
+              src={Tutors}
+              alt="Study Material"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Tutor List</p>
+          </div>
+        </Link>
+
+        <Link to="/AdminTestScheduler" className="option-link">
+          <div className="option">
+            <img
+              src={exam}
+              alt="Study Material"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Schedule Test</p>
+          </div>
+        </Link>
+
+        <Link to="/" className="option-link">
+          <div className="option">
+            <img
+              src={logout}
+              alt="Study Material"
+              style={{ width: "100px", height: "100px" }}
+            />
+            <p>Log Out</p>
+          </div>
+        </Link>
+      </div>
+            
+        </div>
+        <Footer/>
         
-                        
-                        
-                        <Link to="/FeedbackList"><button>View Feedback</button></Link>
-                        
-                        <Link to ="/addprof"><button>ADD PROFFESOR</button></Link>
-                        <Link to ="/Student_list"><button>Users</button></Link>
-                        <Link to ="/Tutor_list"><button>Tutors</button></Link>
-                        <Link to ="/"><button>Logout</button></Link>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }
