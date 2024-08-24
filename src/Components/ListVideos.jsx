@@ -12,7 +12,7 @@ const ListVideos = () => {
 
   const fetchVideos = async () => {
     try {
-      const response = await axios.get('http://localhost:8082/api/videos/all');
+      const response = await axios.get('http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/videos/all');
       setVideos(response.data);
     } catch (error) {
       console.error('Error fetching videos:', error);

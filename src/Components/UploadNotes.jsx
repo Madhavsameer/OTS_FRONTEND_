@@ -20,7 +20,7 @@ const UploadComponent = () => {
     formData.append('title', title);
 
     try {
-      await axios.post('http://localhost:8082/api/notes/upload', formData, {
+      await axios.post('http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/notes/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

@@ -12,12 +12,12 @@ export default function Home() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:8082/userlist");
+    const result = await axios.get("http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/userlist");
     setUsers(result.data);
   };
 
   const deleteUser = async (email) => {
-    await axios.delete(`http://localhost:8082/updateuser${email}`);
+    await axios.delete(`http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/updateuser${email}`);
     loadUsers();
   };
 

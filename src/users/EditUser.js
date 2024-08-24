@@ -25,7 +25,7 @@ export default function EditStudent() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-   try{ await axios.post("http://localhost:8082/upuser", user);
+   try{ await axios.post("http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/upuser", user);
     navigate("/studentlist/:email");
   }
 

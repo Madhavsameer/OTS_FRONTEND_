@@ -15,7 +15,7 @@ function Profile(){
     }, []);
   
     const loadUsers = async () => {
-      const result = await axios.get("http://localhost:8082/getcoursenames");
+      const result = await axios.get("http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/getcoursenames");
       setUsers(result.data);
     };
     return(

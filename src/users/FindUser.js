@@ -24,7 +24,7 @@ export default function FindUser() {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:8082/loginuser`, user);
+      await axios.post(`http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/loginuser`, user);
       navigate("/StudentProfile");
     } catch {
       let a = document.getElementById("er");
@@ -37,7 +37,7 @@ export default function FindUser() {
   const onSubmita = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:8082/loginprofessor`, user);
+      await axios.post(`http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/loginprofessor`, user);
       navigate("/TutorProfile");
     } catch {
       let a = document.getElementById("er");
@@ -50,7 +50,7 @@ export default function FindUser() {
   const onSubmitb = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:8082/loginadmin`, user);
+      await axios.post(`http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/loginadmin`, user);
       navigate("/Home");
     } catch {
       let a = document.getElementById("er");
