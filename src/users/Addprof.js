@@ -28,7 +28,7 @@ export default function AddUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-   try{ await axios.post("http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/registerprofessor", user);
+   try{ await axios.post("https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/registerprofessor", user);
     navigate("/Tutor_list");
   }
 

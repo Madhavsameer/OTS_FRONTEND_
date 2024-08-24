@@ -5,7 +5,7 @@ const StudentTestList = () => {
     const [tests, setTests] = useState([]);
 
     useEffect(() => {
-        axios.get('http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/tests/active')
+        axios.get('https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/tests/active')
             .then(response => {
                 setTests(response.data);
             })

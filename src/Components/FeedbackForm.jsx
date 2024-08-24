@@ -13,7 +13,7 @@ const FeedbackForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/feedback/post",
+        "https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/feedback/post",
         { message, rating }
       );
       console.log("Feedback submitted:", response.data);

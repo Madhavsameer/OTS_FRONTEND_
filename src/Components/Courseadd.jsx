@@ -27,7 +27,7 @@ function Courseadd() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-   try{ await axios.post("http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/addCourse", user);
+   try{ await axios.post("https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/addCourse", user);
     navigate("/Search_courses");
   }
 

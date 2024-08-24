@@ -13,7 +13,7 @@ const ListNotes = () => {
 
   const fetchNotes = async () => {
     try {
-      const response = await axios.get('http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/assignment/all');
+      const response = await axios.get('https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/assignment/all');
       setNotes(response.data);
     } catch (error) {
       console.error('Error fetching notes:', error);
@@ -22,7 +22,7 @@ const ListNotes = () => {
 
   const openNoteAsPdf = async (noteId) => {
     try {
-      const response = await axios.get(`http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/assignment/${noteId}`, {
+      const response = await axios.get(`https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/assignment/${noteId}`, {
         responseType: 'blob' // Ensure response is treated as a binary blob
       });
       const url = window.URL.createObjectURL(new Blob([response.data], { type: 'application/pdf' }));

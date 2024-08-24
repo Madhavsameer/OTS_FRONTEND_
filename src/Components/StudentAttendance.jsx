@@ -6,7 +6,7 @@ const AllAttendance = () => {
   const [attendanceData, setAttendanceData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/attendance/madhav sameer')
+    axios.get('https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/attendance/madhav sameer')
       .then(response => {
         // Calculate attendance status based on duration
         const updatedAttendanceData = response.data.map(record => ({

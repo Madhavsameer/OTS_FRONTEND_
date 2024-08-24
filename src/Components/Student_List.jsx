@@ -12,12 +12,12 @@ export default function Home() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/userlist");
+    const result = await axios.get("https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/userlist");
     setUsers(result.data);
   };
 
   const deleteUser = async (email) => {
-    await axios.delete(`http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/updateuser${email}`);
+    await axios.delete(`https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/updateuser${email}`);
     loadUsers();
   };
 

@@ -10,7 +10,7 @@ const FeedbackList = () => {
     useEffect(() => {
         const fetchFeedbacks = async () => {
             try {
-                const response = await axios.get('http://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/feedback/get');
+                const response = await axios.get('https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/feedback/get');
                 setFeedbacks(response.data);
             } catch (error) {
                 console.error('Error fetching feedbacks:', error);
