@@ -21,7 +21,7 @@ const ListNotes = () => {
 
   const openNoteAsPdf = async (noteId) => {
     try {
-      const response = await axios.get(`https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/notes/${noteId}`, {
+      const response = await axios.get(`https://otsbackend.netlify.app/api/notes/${noteId}`, {
         responseType: 'blob' // Ensure response is treated as a binary blob
       });
       const url = window.URL.createObjectURL(new Blob([response.data], { type: 'application/pdf' }));

@@ -48,7 +48,7 @@ function StudentGrades() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/grades/${regNo}`);
+      const response = await axios.get(`https://otsbackend.netlify.app/grades/${regNo}`);
       setGrades(response.data);
       setStudentName(response.data[0]?.name || '');
       setRegistrationNumber(response.data[0]?.regNo || '');

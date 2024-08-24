@@ -12,12 +12,12 @@ export default function Home() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/userlist");
+    const result = await axios.get("https://otsbackend.netlify.app/userlist");
     setUsers(result.data);
   };
 
   const deleteUser = async (email) => {
-    await axios.delete(`https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/updateuser${email}`);
+    await axios.delete(`https://otsbackend.netlify.app/updateuser${email}`);
     loadUsers();
   };
 

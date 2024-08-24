@@ -15,7 +15,7 @@ function Profile(){
     }, []);
   
     const loadUsers = async () => {
-      const result = await axios.get("https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/getcoursenames");
+      const result = await axios.get("https://otsbackend.netlify.app/getcoursenames");
       setUsers(result.data);
     };
     return(

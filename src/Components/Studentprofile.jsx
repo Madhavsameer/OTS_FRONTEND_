@@ -10,7 +10,7 @@ let Email=localStorage.getItem("email");
 
 const userDetils = async()=>{
   try{
-    var myObj =  await axios.get(`https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/userprofileDetails/${Email}`);
+    var myObj =  await axios.get(`https://otsbackend.netlify.app/userprofileDetails/${Email}`);
     document.getElementById ("1m").value=myObj.data[0].username;
     document.getElementById ("2m").value=myObj.data[0].mobile;
     document.getElementById ("3m").value=myObj.data[0].userid;

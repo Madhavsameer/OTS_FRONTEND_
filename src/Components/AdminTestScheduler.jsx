@@ -14,7 +14,7 @@ const AdminTestScheduler = () => {
     };
 
     const handleScheduleTest = () => {
-        axios.post('https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/tests/schedule', test)
+        axios.post('https://otsbackend.netlify.app/api/tests/schedule', test)
             .then(response => {
                 alert('Test scheduled successfully:', response.data);
                 // Add any success notification or redirection logic here

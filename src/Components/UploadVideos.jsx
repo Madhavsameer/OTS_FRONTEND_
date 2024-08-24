@@ -20,7 +20,7 @@ const UploadComponent = () => {
     formData.append('title', title);
 
     try {
-      await axios.post('https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/videos/upload', formData, {
+      await axios.post('https://otsbackend.netlify.app/api/videos/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

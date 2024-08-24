@@ -34,7 +34,7 @@ function UploadWork() {
     
     <div class="bigbox">
       <p>Upload from local computer or drive</p>
-      <form action="https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/file"  method="post"  enctype="multipart/form-data">
+      <form action="https://otsbackend.netlify.app/file"  method="post"  enctype="multipart/form-data">
         <label>Enter Course Name</label>
             <input 
             className='inputts'

@@ -12,7 +12,7 @@ const ListVideos = () => {
 
   const fetchVideos = async () => {
     try {
-      const response = await axios.get('https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/videos/all');
+      const response = await axios.get('https://otsbackend.netlify.app/api/videos/all');
       setVideos(response.data);
     } catch (error) {
       console.error('Error fetching videos:', error);
@@ -21,7 +21,7 @@ const ListVideos = () => {
 
   const openVideo = async (videoId) => {
     try {
-      const response = await axios.get(`https://myproject-env.eba-3keamqkz.us-east-1.elasticbeanstalk.com/api/videos/${videoId}`, {
+      const response = await axios.get(`https://otsbackend.netlify.app/api/videos/${videoId}`, {
         responseType: 'blob' // Ensure response is treated as a binary blob
       });
       const url = window.URL.createObjectURL(new Blob([response.data], { type: 'video/mp4' }));
@@ -34,7 +34,7 @@ const ListVideos = () => {
 
   const downloadVideo = async (videoId) => {
     try {
-      const response = await axios.get(`https://localhost:8082/api/videos/${videoId}`, {
+      const response = await axios.get(`https://otsbackend.netlify.app/api/videos/${videoId}`, {
         responseType: 'blob' // Ensure response is treated as a binary blob
       });
       const url = window.URL.createObjectURL(new Blob([response.data]));
